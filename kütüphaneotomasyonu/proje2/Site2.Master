@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="proje2.Site2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div style="background-color:#139299; float:inherit; height:100px;">
+    <br />
+      <br />
+        <br />
+    
+    <center>KÜTÜPHANE BİLGİ SİSTEMİ
+    <div style="margin-left:555px;"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></div>
+        </center>
+    </div>
+     <div style="float:left; background-color:#139299; width: 310px; margin-left: 0; height: 500px;">
+        <asp:TreeView ID="TreeView1" runat="server" Height="455px" 
+             ImageSet="BulletedList3" ShowExpandCollapse="False" Width="280px">
+            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+            <Nodes>
+                <asp:TreeNode Text="ANASAYFA" Value="ANASAYFA" NavigateUrl="~/WebForm1.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="BİLGİ GÜNCELLEME" Value="BİLGİ GÜNCELLEME" 
+                    NavigateUrl="~/bilgigüncelle.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="KATALOG TARAMA" Value="KATALOG TARAMA">
+                    <asp:TreeNode Text="ADA GÖRE ARA" Value="ADA GÖRE ARA" 
+                        NavigateUrl="~/ara/adagöre.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="YAZAR ADINA GÖRE ARA" Value="YAZARA GÖRE ARA" 
+                        NavigateUrl="~/ara/yazaradinagore.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="TÜRE GÖRE ARA" Value="TÜRE GÖRE ARA" 
+                        NavigateUrl="~/ara/türegore.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="YAYINEVİNE GÖRE ARA" Value="YAYINEVİNE GÖRE ARA" 
+                        NavigateUrl="~/ara/yayınevinegore.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="DİLE GÖRE ARA" Value="DİLE GÖRE ARA" 
+                        NavigateUrl="~/ara/dilegore.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="KİTAP NUMARASINA GÖRE ARA" 
+                        Value="KİTAP NUMARASINA GÖRE ARA" NavigateUrl="~/ara/kitapnoyagore.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="BASIM YILINA GÖRE ARA" Value="BASIM YILINA GÖRE ARA" 
+                        NavigateUrl="~/ara/basimyilinagore.aspx">
+                    </asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="ÜZERİMDEKİLER" Value="ÜZERİMDEKİLER" 
+                    NavigateUrl="~/üzerimdekiler.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="OKUDUKLARIM" Value="OKUDUKLARIM" 
+                    NavigateUrl="~/okuduklarim.aspx"></asp:TreeNode>
+
+                <asp:TreeNode NavigateUrl="~/kitapal.aspx" Text="KİTAP AL" Value="New Node">
+                </asp:TreeNode>
+                <asp:TreeNode Text="OTURUMU KAPAT" Value="OTURUMU KAPAT" 
+                    NavigateUrl="~/index.aspx"></asp:TreeNode>
+            </Nodes>
+            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+            <ParentNodeStyle Font-Bold="False" />
+            <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                HorizontalPadding="0px" VerticalPadding="0px" />
+        </asp:TreeView>
+    
+    </div>
+   
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{"books":
+    {"book":
+        [
+         {"title":"SEVGİLİYE",
+		 "satir1":"Benimle olan birlikteliğinin gönderdiğim çiçekler kadar renkli geçmesi dileğiyle",
+		 "satir2":"Sana gönderdiğim çiçekler güzelliğinin karşısında solmazlar umarım",
+		 "satir3":"Hayatımdaki varlığın için teşekkürler. Seni seviyorum",
+		 "satir4":"Seni ne çok sevdiğimi çiçeklere sor çünkü onlara fısıldadım aşkımızı"
+		 },
+         {"title":"DOĞUM GÜNÜ",
+		 "satir1":"Yeni yaşının gönderdiğim çiçekler kadar renkli geçmesini temenni ederim",
+		 "satir2":"Yeni yaşında yüzünde gülümseme eksik olmasın",
+		 "satir3":"Yeni bir yıl, yeni bir umut, yeni bir hayattır. Umutlarını kaybetmediğin bir yıl olmasını dilerim",
+		 "satir4":"Yeni yılında tüm dileklerinin gerçekleşmesi dileğiyle, mutlu yıllar"
+		 },
+         {"title":"İŞE BAŞLAMA",
+		 "satir1":"Yeni işinde başarılar dilerim. Senin için hayırlı olur umarım",
+		 "satir2":"Yeni işinde her şeyin yolunda gitmesi dileklerimle",
+		 "satir3":"Yeni bir iş, yeni bir başlangıç her şey gönlünce olur umarım",
+		 "satir4":"Başarılarının yeni işinde de devam etmesini temenni ederim"
+		 },
+		  {"title":"ANNEYE",
+		 "satir1":"Sana dünyadaki tüm çiçekleri göndermek isterdim canım annem",
+		 "satir2":"Yeryüzünde senden daha kıymetli bir şey yoktur benim güzel annem",
+		 "satir3":"Beni bu günlere getiren canım anneme",
+		 "satir4":"Hayatım boyunca her daim yanımda olan sevgili anneme"
+		 },
+		   {"title":"BABAYA",
+		 "satir1":"Hayatımdaki en önemli varlık olan babama",
+		 "satir2":"Birlikte nice, mutlu günler geçirmemiz dileğiyle",
+		 "satir3":"Dünyamdaki en değerli adama",
+		 "satir4":"Canım babama. Seni seviyorum"
+		 }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+c:\users\yagmur\documents\visual studio 2010\Projects\proje2\proje2\bin\proje2.dll
+c:\users\yagmur\documents\visual studio 2010\Projects\proje2\proje2\bin\proje2.pdb
+c:\users\yagmur\documents\visual studio 2010\Projects\proje2\proje2\obj\Debug\ResolveAssemblyReference.cache
+c:\users\yagmur\documents\visual studio 2010\Projects\proje2\proje2\obj\Debug\proje2.dll
+c:\users\yagmur\documents\visual studio 2010\Projects\proje2\proje2\obj\Debug\proje2.pdb
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\proje2\proje2\bin\proje2.dll
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\proje2\proje2\bin\proje2.pdb
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\proje2\proje2\obj\Debug\proje2.dll
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\proje2\proje2\obj\Debug\proje2.pdb
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\proje2\proje2\obj\Debug\proje2.csprojResolveAssemblyReference.cache
+C:\Users\yagmur\Desktop\5.yarıyıl\vtys ödev\proje2\proje2\proje2\bin\proje2.dll
+C:\Users\yagmur\Desktop\5.yarıyıl\vtys ödev\proje2\proje2\proje2\bin\proje2.pdb
+C:\Users\yagmur\Desktop\5.yarıyıl\vtys ödev\proje2\proje2\proje2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yagmur\Desktop\5.yarıyıl\vtys ödev\proje2\proje2\proje2\obj\Debug\proje2.dll
+C:\Users\yagmur\Desktop\5.yarıyıl\vtys ödev\proje2\proje2\proje2\obj\Debug\proje2.pdb
+C:\Users\w7\Desktop\proje2 (2)\proje2\proje2\bin\proje2.dll
+C:\Users\w7\Desktop\proje2 (2)\proje2\proje2\bin\proje2.pdb
+C:\Users\w7\Desktop\proje2 (2)\proje2\proje2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\w7\Desktop\proje2 (2)\proje2\proje2\obj\Debug\proje2.dll
+C:\Users\w7\Desktop\proje2 (2)\proje2\proje2\obj\Debug\proje2.pdb

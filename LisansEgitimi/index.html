@@ -1,0 +1,137 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <title>Bilgisayar Mühendisliği</title>
+    <link  type="text/css" rel="stylesheet" href="Css/bicim.css"/>
+    <script src="Css/jquery.min.js"> </script>
+	
+
+    <script>
+        $(document).ready(function(){
+            function amaclargetir()
+            {	
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() 
+                {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                    {
+                        document.getElementById("ortaform").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET", "DersPlani/AmacVeHedefler.txt", true);
+                xmlhttp.send(); 
+            }
+
+            function pro_ogr_ciktilari()
+            {	          
+                xmlhttp=new XMLHttpRequest();
+                xmlhttp.onreadystatechange=function()
+                {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        xmlDoc=xmlhttp.responseXML;
+                        var txt="<table border='2' ;' id='ogrenmeciktitablosu'>";
+                        var x=xmlDoc.getElementsByTagName("PROGRAM");
+                        for ( var i=0;i<x.length;i++)
+                        {
+                            txt=txt + '<tr style="height: 25px">'+
+                                '<td style="width: 800px; background-color:darkcyan;">'+
+                                x[i].getElementsByTagName("BASLIK")[0].childNodes[0].nodeValue + "</td></tr>"+
+                            ' <tr style="height: 85px">'+
+                                '<td style="width: 800px">'+
+							'<br><b>'+x[i].getElementsByTagName("ALTBASLIK")[0].childNodes[0].nodeValue +'</b><br><br><p>'+x[i].getElementsByTagName("ICERIK")[0].childNodes[0].nodeValue +'</p></td></tr>';
+							
+						}
+                        document.getElementById("ortaform").innerHTML=txt;
+                    }
+                }
+                xmlhttp.open("GET","DersPlani/ProgramOgrenmeCiktilari.xml",true);
+                xmlhttp.send();
+            }
+		
+            $("#ortaform").load("DersPlani/ortaform.html");
+            $("#amac").click(function(){
+            amaclargetir();
+            });
+
+            $("#prog_ögr").click(function(){
+                pro_ogr_ciktilari();
+            });
+
+            $("#dersplan").click(function(){
+                $("#ortaform").load("DersPlani/DersPlani.html");
+            });
+			
+			$("#ortaform").load("DersPlani/DersPlani.html");
+           
+        });
+
+
+</script>
+</head>
+<body>
+
+<div id="ust">
+<img src="adsız.png"  >
+</div>
+
+<div id="ustmenu">
+    <li>
+        <ul> ANASAYFA </ul>
+        <ul> BÖLÜM</ul>
+        <ul>AKADEMİK </ul>
+        <ul>EĞİTİM </ul>
+        <ul> ÖĞRENCİ</ul>
+        <ul>BİLGİ </ul>
+        <ul>BAĞLANTI </ul>
+        <ul>GALERİ </ul>
+        <ul>İLETİŞİM </ul>
+    </li>
+</div>
+
+<div id="yanmenu">
+
+        <br><br>
+        PROGRAM BİLGİLERİ<br>
+        -----------------------------------------<br>
+        <a id="amac">Amaç ve Hedefler</a><br>
+        -----------------------------------------<br>
+
+        <a id="dersplan">Ders Planı- AKTS Bilgileri</a><br>
+        -----------------------------------------<br>
+
+        <a id="prog_ögr">Program Öğrenme Çıktıları</a><br>
+        -----------------------------------------<br>
+
+        Eğitim Öğretim Metotları<br>
+        -----------------------------------------<br>
+
+        Ders Prog. Çıktıları İlişkileri<br>
+        -----------------------------------------<br>
+        Ders Kategori Listesi<br>
+        -----------------------------------------<br>
+        Alınacak Derece<br>
+        -----------------------------------------<br>
+        Özel Kabul Koşulları<br>
+        -----------------------------------------<br>
+        Önceki Öğretimi Tanıma<br>
+        -----------------------------------------<br>
+        İstihdam Olanakları<br>
+        -----------------------------------------<br>
+        Mezuniyet Koşulları<br>
+        -----------------------------------------<br>
+        Ölçme ve Değerlendirme<br>
+        -----------------------------------------<br>
+        Bölüm Bşk. ve AKTS Koord.<br>
+        -----------------------------------------<br>
+        Öğrencilere Uyg. Anketler<br>
+        -----------------------------------------<br>
+        2012-2013 Ders Plan Güncellemeleri<br>
+        -----------------------------------------<br>
+        İntibak Esasları<br>
+        -----------------------------------------<br>
+</div>
+<div id="ortaform">
+</div>
+</body>
+</html> 

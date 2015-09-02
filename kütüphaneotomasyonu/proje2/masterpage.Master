@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="proje2.masterpage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="BİCİM.css" rel="Stylesheet"type ="text/css" />
+    
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+      <div style="margin-left:75px; margin-right:75px; background-color:Gray">
+
+        <p style="height: 225px">
+                  
+            <asp:Image ID="Image2"  
+                runat="server" ImageUrl="BASLİK.png" />
+                <embed src="http://localhost:50574/034_Flash-Clock-Saat.swf" 
+        quality="high" wmode="transparent" name="superpimper" 
+        align="middle" allowScriptAccess="sameDomain" 
+        type="application/x-shockwave-flash" 
+        pluginspage="http://www.macromedia.com/go/getflashplayer" 
+        style="height: 138px; width: 181px;" />
+         
+<ul id="menu">
+		     
+			<a href="index.aspx"><li style="margin-left:0; width:150px;" class="active">ANASAYFA</li></a>
+			<a href="kitaplar.aspx"><li style="width:150px;">KİTAPLAR</li></a>
+			<a href="uyegirisi.aspx"><li style="width:150px;"> ÜYE GİRİŞİ</li></a>
+       
+			
+			<a href="admingirisi.aspx"><li style="width:150px;"> ADMİN GİRİŞİ</li></a>
+       
+            <a href="uyelikformu.aspx"><li style="width:150px;">ÜYELİK FORMU</li></a>
+		</ul>
+  
+
+        <p>
+            &nbsp;</p>
+       
+  
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

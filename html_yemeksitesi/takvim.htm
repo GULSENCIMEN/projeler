@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Dynarch Calendar -- external next/prev date buttons</title>
+    <script src="./js/jscal2.js"></script>
+    <script src="./js/lang/en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/jscal2.css" />
+    <link rel="stylesheet" type="text/css" href="./css/border-radius.css" />
+    <link rel="stylesheet" type="text/css" href="./css/steel/steel.css" />
+  </head>
+  <body>
+    <table>
+      <tr><td id="container"></td></tr>
+      <tr style="test-align: center"><td>
+      </td></tr>
+    </table>
+
+    <script>//<![CDATA[
+
+      var now = new Date();
+
+      var cal = Calendar.setup({
+        min       : 20100401,
+        max       : 20100430,
+        cont      : "container",
+        selection : [ Calendar.dateToInt(now) ]
+      });
+
+      function move_relative(delta) {
+        var date = Calendar.intToDate(cal.selection.get());
+        date.setDate(date.getDate() + delta);
+        if (!cal.isDisabled(date)) {
+          cal.selection.reset([ Calendar.dateToInt(date) ]);
+        }
+      };
+
+    //]]></script>
+  </body>
+</html>

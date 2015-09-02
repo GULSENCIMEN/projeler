@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CATALOG>PROGRAM ÖĞRENME ÇIKTILARI
+
+    <PROGRAM>
+         <BASLIK>BİLGİ</BASLIK>
+         <ALTBASLIK>Kurumsal, Algısal</ALTBASLIK>
+         <ICERIK>- Matematik, fen bilimleri ve ilgili mühendislik disiplinine özgü konularda yeterli bilgi birikimi; bu alanlardaki kuramsal ve uygulamalı bilgileri, karmaşık mühendislik problemlerinde kullanabilme becerisi.
+
+ Karmaşık mühendislik problemlerini saptama, tanımlama, formüle etme ve çözme becerisi; bu amaçla uygun analiz ve modelleme yöntemlerini seçme ve uygulama becerisi.</ICERIK>
+  
+   </PROGRAM>
+
+    <PROGRAM>
+          <BASLIK>BECERİLER</BASLIK>
+          <ALTBASLIK>Bilişsel, Uygulamalı</ALTBASLIK>
+           <ICERIK> - Karmaşık bir sistemi, süreci, cihazı veya ürünü gerçekçi kısıtlar ve koşullar altında, belirli gereksinimleri karşılayacak şekilde tasarlama becerisi; bu amaçla modern tasarım yöntemlerini uygulama becerisi.
+
+ Mühendislik uygulamalarında karşılaşılan karmaşık problemlerin analizi ve çözümü için gerekli olan modern teknik ve araçları geliştirme, seçme ve kullanma becerisi; bilişim teknolojilerini etkin bir şekilde kullanma becerisi.
+
+ Karmaşık mühendislik problemlerinin veya disipline özgü araştırma konularının incelenmesi için deney tasarlama, deney yapma, veri toplama, sonuçları analiz etme ve yorumlama becerisi. </ICERIK>
+   	</PROGRAM>
+
+     <PROGRAM>
+           <BASLIK>YETKİNLİKLER</BASLIK>
+           <ALTBASLIK>Bağımsız Çalışabilme ve Sorumluluk Alabilme Yetkinliği</ALTBASLIK>
+            <ICERIK>Bireysel olarak ve çok disiplinli takımlarda etkin çalışabilme becerisi, sorumluluk alma özgüveni.Proje yönetimi, risk yönetimi ve değişiklik yönetimi gibi, iş hayatındaki uygulamalar hakkında bilgi; girişimcilik, yenilikçilik hakkında farkındalık; sürdürülebilir kalkınma hakkında bilgi.
+
+Türkçe sözlü ve yazılı etkin iletişim kurma becerisi; en az bir yabancı dil bilgisi; etkin rapor yazma ve yazılı raporları anlama, tasarım ve üretim raporları hazırlayabilme, etkin sunum yapabilme, açık ve anlaşılır talimat verme ve alma becerisi.</ICERIK>
+
+     </PROGRAM>
+
+</CATALOG>

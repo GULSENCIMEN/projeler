@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="proje2.Site3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div style="background-color:#139299; float:inherit; height:100px;">
+    <br />
+      <br />
+        <br />
+    
+    <center>KÜTÜPHANE BİLGİ SİSTEMİ
+    <div style="margin-left:555px;"></div>
+        </center>
+    </div>
+     <div style="float:left; background-color:#139299; width: 310px; margin-left: 0; height: 500px;">
+        <asp:TreeView ID="TreeView1" runat="server" Height="455px" 
+             ImageSet="BulletedList3" ShowExpandCollapse="False" Width="280px">
+            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+            <Nodes>
+                <asp:TreeNode Text="KİTAP EKLE/SİL/GÜNCELLE" Value="ANASAYFA" NavigateUrl="~/kitapekle.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="ÜYE LİSTELE" Value="ÜYE LİSTELE"  NavigateUrl="~/üye_liste.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="ADMİN EKLE" Value="ADMİN EKLE" NavigateUrl="~/adminekle.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="OTURUMU KAPAT" Value="OTURUMU KAPAT" NavigateUrl="~/index.aspx"></asp:TreeNode>
+                    
+            </Nodes>
+            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+            <ParentNodeStyle Font-Bold="False" />
+            <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                HorizontalPadding="0px" VerticalPadding="0px" />
+        </asp:TreeView>
+    
+    </div>
+   
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

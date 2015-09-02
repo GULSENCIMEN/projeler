@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TEST.master.cs" Inherits="_1_nisan.TEST" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="arka.jpg" >
+    <form id="form1" runat="server" style="height:%100; width:%100;background-color:White ">
+    <div style="width: 850px; margin-left: 200px;">
+        <asp:Image ID="Image1" runat="server" Height="165px" 
+            ImageUrl="~/kisilik_logo - Kopya.png" Width="855px" />
+        <div style="float:right; width: 693px;  margin-left:auto; margin-right:auto; height: 500px; background-color:White">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+                     </div>
+
+                            <div style= "float:left; width: 155px; height: 500px; background-color:White">
+                   
+                    <center>
+                    <br />
+                    <br />
+                                <asp:Label ID="Label1" runat="server" ForeColor="Black" 
+                            Text="AKTİF KULLANICI"></asp:Label>
+                            <br />
+                                <br />
+                        <asp:Label ID="LabelT1" runat="server" ForeColor="Black" Text="Label"></asp:Label>
+                                <br />
+                                <asp:Label ID="LabelT2" runat="server" ForeColor="Black" Text="Label"></asp:Label>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                 <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/uyee.png" Width="118px" 
+                            Height="112px" />
+                        <br />
+                        <br />
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="admingiris.aspx" ForeColor="Black">Yönetici Girişi</asp:HyperLink>
+                                </center>
+            </div>
+    </div>
+    </form>
+</body>
+</html>

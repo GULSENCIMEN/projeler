@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description"content="" />
+    <meta name="keywords"content="" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <section id="container">
+        <header>
+            <a href="/">
+                <div id="logo"></div>
+            </a>
+            <div id="social-media">
+                <a href="#" target="_blank">
+                    <div class="social">
+                        <img src="~/Content/img/googleplus.png" alt="google plus" />
+                    </div>
+                </a>
+                <a href="//twitter.com/" target="_blank">
+                    <div class="social">
+                        <img src="~/Content/img/twitter.jpg" alt="twitter" />
+                    </div>
+                    </a>
+                
+                    <a href="//facebook.com/" target="_blank">
+                        <div class="social">
+                            <img src="~/Content/img/facebook.jpg" alt="facebook" />
+                        </div>
+                    </a>
+</div>
+        </header>
+        <nav>
+            <a href="/">
+                <div class="nav-item">
+                    <span>Ana Sayfa</span>
+                </div>
+            </a>
+            <a href="/bize_dair">
+                <div class="nav-item">
+                    <span>Bize Dair</span>
+                </div>
+            </a>
+            <a href="/referanslar">
+                <div class="nav-item">
+                    <span>Referanslar</span>
+                </div>
+            </a>
+            <a href="/cozumler">
+                <div class="nav-item">
+                    <span>Çözümler</span>
+                </div>
+                </a>
+            <a href="/iletisim">
+                <div class="nav-item" style="width:192px;border-right:0;">
+                    <span>İletişim</span>
+                </div>
+            </a>
+        </nav>
+        <section id="content">
+            @RenderBody()
+            
+        </section>
+    <footer>
+        <small>2014 &copy;Firma Adı| Tüm Hkakları Saklıdır. </small>
+    </footer>
+    </section>
+  
+</body>
+</html>

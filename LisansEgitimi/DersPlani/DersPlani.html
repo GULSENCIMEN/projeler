@@ -1,0 +1,818 @@
+<html>
+<meta charset="utf-8" />
+<title>Bilgisayar Mühendisliği</title>
+<link  type="text/css" rel="stylesheet" href="Css/bicim.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+         $(document).ready(function(){
+		 
+		 function icerikyukle(i){
+             xmlhttp = new XMLHttpRequest();
+             xmlhttp.onreadystatechange=function() {
+                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                     myFunction(xmlhttp.responseText);
+                 }
+             }
+             xmlhttp.open("GET", "DersPlani/DersIcerikleri.json", true);
+             xmlhttp.send();
+
+             function myFunction(response) {
+                 var obj = JSON && JSON.parse(response) || $.parseJSON(response);
+                 var cikti = '';
+                     cikti +='<td  style=""><div class="acilanders">'+
+                 '<table style="background-color: #DDD; width:660px;">'+
+                         '<tr style=" height:40px;">'+
+                         '<td ><center><b>DERS BİLGİLERİ</b></center></td>'+
+                         '</tr>'+
+                         '<tr class="derstablosu">'+
+                         '<td style="width:150px;"><b>Ders</b> </td>'+
+                         '<td style="width:150px;"><center>Kodu</center></td>'+
+                         '<td style="width:75px;"><center>Yarıyıl</center></td>'+
+                         '<td style="width:150px;"><center>T+U Saat</center></td>'+
+                         '<td style="width:75px;"><center>Kredi</center></td>'+
+                         '<td style="width:75px;"><center>Akts</center></td>'+
+                         '</tr>'+
+                         '<tr class="derstablosu">'+
+                         '<td style="width:150px;">'+obj.ayrintilar[i].dersinAdi+' </td>'+
+                         '<td style="width:150px;"><center>'+obj.ayrintilar[i].kod+'</center></td>'+
+                         '<td style="width:75px;"><center>'+obj.ayrintilar[i].yariyil+'</center></td>'+
+                         '<td style="width:150px;"><center>'+obj.ayrintilar[i].dersSaati+'</center></td>'+
+                         '<td style="width:75px;"><center>'+obj.ayrintilar[i].kredi+'</center></td>'+
+                         '<td style="width:75px;"><center>'+obj.ayrintilar[i].akts+'</center></td>'+
+                         '</tr>'+
+                         '</table>'+
+                         '</div>'+
+                         '<div class="acilanders">'+
+                         '<table style="background-color: #DDD; width:660px;">'+
+                         '<tr class="derstablosu">'+
+                         '<td style="width:180px;"><b>Ön Koşul Dersleri</b> </td>'+
+                         '<td style="width:495px;"> </td></tr>'+
+                         '<tr class="derstablosu"><td style="width:180px;"><b>Önerilen Seçmeli Dersler</b> </td>'+
+                         '<td style="width:495px;">'+ obj.ayrintilar[i].onerilensecmeli +'</td>'+
+                         '</tr></table></div>'+
+                         '<div class="acilanders"><table style="background-color: #DDD; width:660px;"><tr class="derstablosu">'+
+                         '<td style="width:180px;"><b>Dersin Dili</b> </td><td style="width:495px;">'+obj.ayrintilar[i].dersDili+'</td></tr>'+
+                         '<tr class="derstablosu"><td style="width:180px;"><b>Dersin Seviyesi</b> </td><td style="width:495px;">'+obj.ayrintilar[i].seviye+'</td></tr>'+
+                         '<tr class="derstablosu"><td style="width:180px;"><b>Dersin Türü</b> </td><td style="width:495px;">'+obj.ayrintilar[i].tur+'</td></tr>'+
+                         '<tr class="derstablosu"><td style="width:180px;"><b>Dersin Koordinatörü</b> </td><td style="width:495px;">'+obj.ayrintilar[i].dersinKoordinatoru+'</td>'+
+                         '</tr><tr class="derstablosu"><td style="width:180px;"><b>Dersi Verenler</b> </td><td style="width:495px;">'+obj.ayrintilar[i].dersiVeren+'</td>'+
+                         '</tr><tr class="derstablosu"><td style="width:180px;"><b>Dersin Yardımcıları</b> </td><td style="width:495px;">'+obj.ayrintilar[i].yardimcilar+'</td>'+
+                         '</tr><tr class="derstablosu"><td style="width:180px;"><b>Dersin Amacı</b></td>'+
+                         '<td style="width:495px;">'+obj.ayrintilar[i].dersinAmaci+'</td></tr>'+
+                         '<tr class="derstablosu"><td style="width:180px;"><b>Dersin İçeriği</b></td>'+
+                         '<td style="width:495px;">'+obj.ayrintilar[i].dersinIcerigi+'</td></tr></table></div></td>'
+                 document.getElementById("ders_"+i).innerHTML = cikti;
+		 }
+         }
+        $("#difgetir").click(function(){
+            $("#ders_0").toggle();
+            icerikyukle(0);
+
+        });
+        $("#edlgetir").click(function(){
+            icerikyukle(1);
+            $("#ders_1").toggle();
+        });
+        $("#bil_orggetir").click(function(){
+            icerikyukle(2);
+            $("#ders_2").toggle();
+        });
+        $("#pdpgetir").click(function(){
+            icerikyukle(3);
+            $("#ders_3").toggle();
+        });
+        $("#ayrikgetir").click(function(){
+            icerikyukle(4);
+            $("#ders_4").toggle();			
+        });
+
+    });
+
+
+</script>
+</head>
+<body>
+
+<table border="2" id="dersplani">
+
+    <tr>
+        <td style="background-color: darkcyan"><center><b> Ders Planı- AKTS Bilgileri </b></center></td>
+		</tr>
+    <tr>
+
+        <td>
+            * Bu ders planı tablosunda gösterilen dersler öğrenci işlerindeki güncel ders plan bilgilerini göstermektedir.<br><br>
+            ** İlgili dönemde zorunlu dersler mutlaka açılırken, seçmeli, teknik seçmeli ve sosyal seçmeli derslerin açılması tercih ve kontenjan durumuna bağlı olarak değişkenlik gösterebilir.<br><br>
+            Herhangi bir dersin amaç, öğrenme çıktıları vs. detay bilgilerini görmek için aşağıdaki tabloda dersin ismine tıklayınız.
+        </td>
+</tr>
+</table>
+<br>
+
+<table width="80%" border="1"id="geneltablo">
+				
+					<tr>
+						<td align="center" colspan="10"style="background-color: darkcyan"><b>Hazırlık Sınıfı Ders Listesi</b></td>
+					</tr>
+					
+					<tr>
+						
+						<td align="center" width="75"><b>Kodu</b></td>
+						<td align="center" width="200"><b>Ders</b></td>
+						<td align="center" ><b>Tür</b></td>
+						<td align="center" ><b>Dil</b></td>
+						<td align="center" "><b>T+U Saat</b></td>
+						<td align="center" ><b>Kredi</b></td>
+						<td align="center"><b>AKTS</b></td>
+						
+					</tr>					
+						<tr>
+							
+							<td align="center"><font color="black"> YAB 001 </font></td>
+							<td width="250">İNGİLİZCE HAZIRLIK</td>							
+							<td align="center" title="Zorunlu"><font color="black">Z</font></td>
+							<td align="center"><font color="black"> Türkçe </font></td>
+							<td align="center"><font color="black"> 6+0</font></td>
+							<td align="center"><font color="black"> 6</font></td>
+							<td align="center"><font color="black"> 6</font></td>
+							
+						</tr>
+					<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>6</b></td>
+					</tr>
+					
+						</table>
+
+<table border="1" id="geneltablo">
+   <tr>
+						<td align="center" colspan="10"style="background-color: darkcyan"><b>1.Yarıyıl Ders Planı </b></td>
+					</tr>
+    <tr>
+        <td style="width:50px; "><b>Kodu</b></td>
+        <td style="width: 200px;"><b>Ders</b></td>
+        <td style="width: 80px;"><b>Z/S</b></td>
+        <td style="width: 70px;"><b>Dil</b></td>
+        <td><b>T+U Saat</b></td>
+        <td><b>Kredi</b></td>
+        <td><b>AKTS</b></td>
+
+    </tr>
+
+    <tr style="color: blue;">
+        <td >TUR101</td>
+        <td>TÜRK DİLİ</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td>4+0</td>
+        <td >4</td>
+        <td >4</td>
+
+    </tr>
+
+    <tr style="color: red;" >
+        <td >FIZ 111</td>
+        <td>FIZIK I</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+2</td>
+        <td>4</td>
+        <td>6</td>
+
+    </tr>
+
+    <tr style="color: red;">
+        <td >MAT 113</td>
+        <td>LINEER CEBIR</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>2+0</td>
+        <td>2</td>
+        <td>4</td>
+
+    </tr>
+
+    <tr style="color: red;">
+        <td>MAT 111</td>
+        <td >MATEMATİK I</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >4+0</td>
+        <td >4</td>
+        <td >6</td>
+
+    </tr>
+	
+	    <tr>
+        <td>BSM 101</td>
+        <td>BİLGİSAYAR MÜHENDİSLİĞİNE GİRİŞ</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>2+0</td>
+        <td>2</td>
+        <td>4</td>
+
+    </tr>
+
+    <tr class="geneltabloSatir">
+        <td>BSM 103</td>
+        <td>PROGRAMLAMAYA GİRİŞ</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>6</td>
+
+    </tr>
+
+
+	<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+<table border="1" id="geneltablo">
+    <tr>
+        <td align="center" colspan="10"style="background-color: darkcyan"><b>2.Yarıyıl Ders Planı </b></td>
+			</tr>
+    <tr>
+        <td style="width:50px; "><b>Kodu</b></td>
+        <td style="width: 200px;"><b>Ders</b></td>
+        <td style="width: 80px;"><b>Z/S</b></td>
+        <td style="width: 70px;"><b>Dil</b></td>
+        <td><b>T+U Saat</b></td>
+        <td><b>Kredi</b></td>
+        <td><b>AKTS</b></td>
+
+    </tr>
+
+    <tr style="color: blue;">
+        <td >DIL 102</td>
+        <td >İNGİLİZCE</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >4+0</td>
+        <td >4</td>
+        <td >4</td>
+
+    </tr>
+
+    <tr style="color: red;">
+        <td >FIZ 112</td>
+        <td >FİZİK II</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >3+2</td>
+        <td >4</td>
+        <td >6</td>
+
+    </tr>
+
+	   <tr style="color: red;">
+        <td >MAT 112</td>
+        <td >MATEMATİK II</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >4+0</td>
+        <td >4</td>
+        <td >6</td>
+
+    </tr>
+
+
+    <tr>
+        <td >BSM 102</td>
+        <td > NESNEYE DAYALI PROGRAMLAMA</td>
+        <td >Zorunlu</td>
+        <td >Türkçe/İngilizce</td>
+        <td >4+0</td>
+        <td >4</td>
+        <td>6</td>
+
+    </tr>
+
+    <tr>
+        <td>BSM 104</td>
+        <td> WEB TEKNOLOJİLERİ</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>4</td>
+
+    </tr>
+
+    <tr style="color: red;">
+        <td>IST 108 </td>
+        <td>OLASILIK VE İSTATİSTİK</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>4</td>
+
+    </tr>
+<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+
+<table border="1" id="geneltablo">
+    <tr>
+        <td align="center" colspan="10"style="background-color: darkcyan"><b>3.Yarıyıl Ders Planı </b></td>
+			</tr>
+    <tr>
+        <td style="width:50px; "><b>Kodu</b></td>
+        <td style="width: 200px;"><b>Ders</b></td>
+        <td style="width: 80px;"><b>Z/S</b></td>
+        <td style="width: 70px;"><b>Dil</b></td>
+        <td><b>T+U Saat</b></td>
+        <td><b>Kredi</b></td>
+        <td><b>AKTS</b></td>
+
+    </tr>
+
+    <tr style="color: blue;">
+        <td >ATA 203</td>
+        <td >ATATÜRK İLKELERİ VE İNKILAP TARİHİ</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >4+0</td>
+        <td >4</td>
+        <td >4</td>
+
+    </tr>
+
+
+
+    <tr>
+        <td >BSM 201</td>
+        <td >ELEKTRİK DEVRE TEMELLERİ</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >2+0</td>
+        <td >2</td>
+        <td >4</td>
+
+    </tr>
+
+    <tr>
+        <td >BSM 203</td>
+        <td >MANTIK DEVRELERİ</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >3+0</td>
+        <td >3</td>
+        <td>5</td>
+
+    </tr>
+
+	    <tr>
+        <td >BSM 205</td>
+        <td >WEB PROGRAMLAMA</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >4+0</td>
+        <td >4</td>
+        <td>6</td>
+
+    </tr>
+
+
+    <tr>
+        <td>BSM 207</td>
+        <td>VERİ YAPILARI</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>6</td>
+
+    </tr>
+	    <tr style="color: red;">
+        <td>MAT 217</td>
+        <td>SAYISAL ANALİZ</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>5</td>
+
+    </tr>
+<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+
+<table border="1" id="geneltablo">
+<tr>
+        <td align="center" colspan="10"style="background-color: darkcyan"><b>4.Yarıyıl Ders Planı </b></td>
+		</tr>
+<tr>
+    <td style="width:50px; "><b>Kodu</b></td>
+    <td style="width: 200px;"><b>Ders</b></td>
+    <td style="width: 80px;"><b>Z/S</b></td>
+    <td style="width: 70px;"><b>Dil</b></td>
+    <td><b>T+U Saat</b></td>
+    <td><b>Kredi</b></td>
+    <td><b>AKTS</b></td>
+
+</tr>
+
+<tr style="color: red;">
+    <td >MAT 202</td>
+    <td  id="difgetir">DİFERANSİYEL DENKLEMLER</td>
+    <td >Zorunlu</td>
+    <td >Türkçe</td>
+    <td >4+0</td>
+    <td >4</td>
+    <td >6</td>
+
+</tr>
+<tr id="ders_0">
+
+</tr>
+<tr>
+    <td >BSM 202</td>
+    <td id="edlgetir">ELEKTRONİK DEVRELER VE LABORATUARI</td>
+    <td >Zorunlu</td>
+    <td >Türkçe</td>
+    <td >3+1</td>
+    <td >4</td>
+    <td>7</td>
+</tr>
+<tr id="ders_1">
+
+</tr>
+
+<tr>
+  <td >BSM 206</td>
+    <td id="bil_orggetir">BİLGİSAYAR ORGANİZASYONU</td>
+    <td >Zorunlu</td>
+    <td >Türkçe/İngilizce</td>
+    <td >3+0</td>
+    <td >3</td>
+    <td>6</td>
+
+</tr>
+<tr id="ders_2">
+
+</tr>
+
+<tr>
+    <td >BSM 208</td>
+    <td id="pdpgetir">PROGRAMLAMA DİLLERİNİN PRENSİPLERİ</td>
+    <td >Zorunlu</td>
+    <td >Türkçe</td>
+    <td >3+0</td>
+    <td >3</td>
+    <td>6</td>
+
+</tr>
+
+<tr id="ders_3">
+</tr>
+
+<tr>
+    <td>BSM 210</td>
+    <td id="ayrikgetir">AYRIK İŞLEMSEL YAPILAR</td>
+    <td>Zorunlu</td>
+    <td>Türkçe</td>
+    <td>3+0</td>
+    <td>3</td>
+    <td>5</td>
+
+</tr>
+
+ <tr id="ders_4">
+    </tr>
+
+
+	<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+
+<table border="1" id="geneltablo">
+    <tr>
+        <td align="center" colspan="10"style="background-color: darkcyan"><b>5.Yarıyıl Ders Planı </b></td>
+			</tr>
+    <tr>
+        <td style="width:50px; "><b>Kodu</b></td>
+        <td style="width: 200px;"><b>Ders</b></td>
+        <td style="width: 80px;"><b>Z/S</b></td>
+        <td style="width: 70px;"><b>Dil</b></td>
+        <td><b>T+U Saat</b></td>
+        <td><b>Kredi</b></td>
+        <td><b>AKTS</b></td>
+
+    </tr>
+ 
+
+    <tr>
+        <td >BSM 301</td>
+        <td >BİÇİMSEL DİLLER VE SOYUT MAKİNELER</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >3+0</td>
+        <td >3</td>
+        <td >5</td>
+
+    </tr>
+
+    <tr>
+        <td >BSM 303</td>
+        <td > VERİTABANI YÖNETİM SİSTEMLERİ</td>
+        <td >Zorunlu</td>
+        <td >Türkçe</td>
+        <td >3+0</td>
+        <td >3</td>
+        <td>5</td>
+
+    </tr>
+
+    <tr>
+        <td>BSM 305</td>
+        <td>VERİ İLETİŞİMİ</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>5</td>
+
+    </tr>
+
+    <tr>
+        <td>BSM 307</td>
+        <td> İŞARETLER VE SİSTEMLER</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>6</td>
+
+    </tr>
+	    <tr>
+        <td>BSM 309</td>
+        <td> İŞLETİM SİSTEMLERİ</td>
+        <td>Zorunlu</td>
+        <td>Türkçe</td>
+        <td>3+0</td>
+        <td>3</td>
+        <td>6</td>
+
+    </tr>
+	    <tr style="color: blue;">
+        <td ></td>
+        <td >ÜNİVERSİTE ORTAK DERSİ</td>
+        <td >Üniversite Ortak</td>
+        <td >-</td>
+        <td >-</td>
+        <td >-</td>
+        <td >5</td>
+
+    </tr>
+<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+<table border="1" id="geneltablo">
+    <tr>
+        <td align="center" colspan="10"style="background-color: darkcyan"><b>6.Yarıyıl Ders Planı </b></td>
+			</tr>
+    <tr>
+        <td style="width:50px; "><b>Kodu</b></td>
+        <td style="width: 200px;"><b>Ders</b></td>
+        <td style="width: 80px;"><b>Z/S</b></td>
+        <td style="width: 70px;"><b>Dil</b></td>
+        <td><b>T+U Saat</b></td>
+        <td><b>Kredi</b></td>
+        <td><b>AKTS</b></td>
+
+    </tr>
+ 
+
+
+ <tr>
+    <td>BSM 304</td>
+    <td>BİLGİSAYAR AĞLARI</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>3+0</td>
+    <td>3</td>
+    <td>6</td>
+</tr>
+<tr>
+    <td>BSM 302</td>
+    <td>MİKROİŞLEMCİLİ SİSTEMLER VE LABARATUVAR</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>3+1</td>
+    <td>4</td>
+    <td>7</td>
+</tr>
+<tr>
+    <td>BSM 308</td>
+    <td>SİSTEM PROGRAMLAMA</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE-İNGİLİZCE</td>
+    <td>3+0</td>
+    <td>3</td>
+    <td>6</td>
+</tr>
+<tr>
+    <td>BSM 310</td>
+    <td>WEB PROGRAMLAMA</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>3+0</td>
+    <td>3</td>
+    <td>6</td>
+</tr>
+<tr>
+    <td>BSM 306</td>
+    <td>YAZILIM MÜHENDİSLİĞİ</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>3+0</td>
+    <td>3</td>
+    <td>5</td>
+</tr>
+ 
+<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+<table border="1" id="geneltablo">
+    <tr>
+        <td align="center" colspan="10"style="background-color: darkcyan"><b>7.Yarıyıl Ders Planı </b></td>
+			</tr>
+    <tr>
+        <td style="width:50px; "><b>Kodu</b></td>
+        <td style="width: 200px;"><b>Ders</b></td>
+        <td style="width: 80px;"><b>Z/S</b></td>
+        <td style="width: 70px;"><b>Dil</b></td>
+        <td><b>T+U Saat</b></td>
+        <td><b>Kredi</b></td>
+        <td><b>AKTS</b></td>
+
+    </tr>
+ 
+<tr>
+    <td>BSM 401</td>
+    <td>BİLGİSAYAR MÜHENDİSLİĞİ TASARIMI</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>2+0</td>
+    <td>2</td>
+    <td>8</td>
+</tr>
+<tr>
+    <td>BSM 499</td>
+    <td>STAJ 1</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>0+1</td>
+    <td>1</td>
+    <td>5</td>
+</tr>
+<tr style="color: red">
+    <td>-</td>
+    <td>SOSYAL SEÇİMLİK</td>
+    <td>ZORUNLU</td>
+    <td>-</td>
+    <td>2+0</td>
+    <td>2</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>SEÇİMLİK 1</td>
+    <td>SEÇMELİ</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>SEÇİMLİK 1</td>
+    <td>SEÇMELİ</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>SEÇİMLİK 2</td>
+    <td>SEÇMELİ</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>SEÇİMLİK 3</td>
+    <td>SEÇMELİ</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>5</td>
+</tr>
+<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+<table border="1" id="geneltablo">
+    <tr>
+        <td align="center" colspan="10"style="background-color: darkcyan"><b>8.Yarıyıl Ders Planı </b></td>
+			</tr>
+    <tr>
+        <td style="width:50px; "><b>Kodu</b></td>
+        <td style="width: 200px;"><b>Ders</b></td>
+        <td style="width: 80px;"><b>Z/S</b></td>
+        <td style="width: 70px;"><b>Dil</b></td>
+        <td><b>T+U Saat</b></td>
+        <td><b>Kredi</b></td>
+        <td><b>AKTS</b></td>
+
+    </tr>
+ 
+
+<tr>
+    <td>BSM 498</td>
+    <td>BİTİRME ÇALIŞMASI</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>0+4</td>
+    <td>4</td>
+    <td>8</td>
+</tr>
+<tr>
+    <td>BSM 496</td>
+    <td>STAJ 2</td>
+    <td>ZORUNLU</td>
+    <td>TÜRÇE</td>
+    <td>0+1</td>
+    <td>1</td>
+    <td>5</td>
+</tr>
+<tr style="color: red">
+    <td>-</td>
+    <td>SOSYAL SEÇİMLİK</td>
+    <td>ZORUNLU</td>
+    <td>-</td>
+    <td>2+0</td>
+    <td>2</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>SEÇİMLİK 1</td>
+    <td>SEÇMELİ</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>SEÇİMLİK 2</td>
+    <td>SEÇMELİ</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td>-</td>
+    <td>SEÇİMLİK 3</td>
+    <td>SEÇMELİ</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>5</td>
+</tr>
+<tr>
+						<td colspan="5" align="right"><b>AKTS kredisi toplamı :</b></td>
+						<td align="center"><b>30</b></td>
+					</tr>
+</table>
+
+</body>
+</html>

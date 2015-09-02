@@ -1,0 +1,35 @@
+.menu_div ul
+{
+    padding:0px;
+    margin:0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:#FFC0CB;
+    list-style:none;
+    text-indent:15px;
+    width: 200px;
+    float:left;
+}
+.menu_div ul li
+{
+    background:#FFC0CB;
+    line-height:28px;
+    border-bottom:1px solid #333;
+}
+.menu_div ul li a
+{
+    text-decoration:none;
+    color:#FFF;
+    display:block;
+}
+.menu_div ul li a:hover
+{
+    background:#AAAAAA;
+}
+.menu_div ul li#active
+{
+    background: #FF0000;
+}
+*, * focus {
+    outline: none;
+}

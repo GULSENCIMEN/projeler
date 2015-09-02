@@ -1,0 +1,51 @@
+﻿  #menu li {
+	float:left;
+	text-align:center;
+	width:200px;
+	padding:15px 0;
+	background-color:#139299;
+	color:#FFF;
+	border-top:1px solid #d75196;
+	border-left:1px solid #d75196;
+	border-right:1px solid #d75196;
+	position: relative;
+    margin-right: 1px;
+    margin-top: 0;
+}
+#menu li:hover {
+	background-color:#ffd1ed;
+	color:#139299;
+	
+}
+#menu li.active 
+{ 
+    
+	background-color:#d75196;
+}
+#menu a {
+	margin:0;
+	padding:0;
+	border:none;
+	
+}
+/*********/
+.sub-menu {
+    display:none;
+    position: absolute;
+    top: 42px;
+    left: -42px;
+	list-style:none;
+}
+#menu li:hover .sub-menu {
+    display:block;
+    
+}
+.textbox
+{
+    left:100px;
+
+    }
+    .admingirişi
+    {
+        left:500px;
+        }

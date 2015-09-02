@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3478D69-5025-41F0-8D6D-6713413A6997}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>proje2</RootNamespace>
+    <AssemblyName>proje2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.aspx" />
+    <Content Include="adminekle.aspx" />
+    <Content Include="admingirisi.aspx" />
+    <Content Include="Adsız.png" />
+    <Content Include="ara\adagöre.aspx" />
+    <Content Include="ara\basimyilinagore.aspx" />
+    <Content Include="ara\dilegore.aspx" />
+    <Content Include="ara\kitapnoyagore.aspx" />
+    <Content Include="ara\türegore.aspx" />
+    <Content Include="ara\yayınevinegore.aspx" />
+    <Content Include="ara\yazaradinagore.aspx" />
+    <Content Include="BASLİK.png" />
+    <Content Include="bilgigüncelle.aspx" />
+    <Content Include="BİCİM.css" />
+    <Content Include="hizli_link.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="indir.jpg" />
+    <Content Include="k1.jpg" />
+    <Content Include="k2.jpg" />
+    <Content Include="k3.jpg" />
+    <Content Include="k4.jpg" />
+    <Content Include="kitapal.aspx" />
+    <Content Include="kitapekle.aspx" />
+    <Content Include="kitaplar.aspx" />
+    <Content Include="okuduklarim.aspx" />
+    <Content Include="resim.jpg" />
+    <Content Include="uyee.png" />
+    <Content Include="uyegirisi.aspx" />
+    <Content Include="uyelikformu.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="üye_liste.aspx" />
+    <Content Include="üzerimdekiler.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminekle.aspx.cs">
+      <DependentUpon>adminekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminekle.aspx.designer.cs">
+      <DependentUpon>adminekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admingirisi.aspx.cs">
+      <DependentUpon>admingirisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admingirisi.aspx.designer.cs">
+      <DependentUpon>admingirisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara\adagöre.aspx.cs">
+      <DependentUpon>adagöre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara\adagöre.aspx.designer.cs">
+      <DependentUpon>adagöre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara\basimyilinagore.aspx.cs">
+      <DependentUpon>basimyilinagore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara\basimyilinagore.aspx.designer.cs">
+      <DependentUpon>basimyilinagore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara\dilegore.aspx.cs">
+      <DependentUpon>dilegore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara\dilegore.aspx.designer.cs">
+      <DependentUpon>dilegore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara\kitapnoyagore.aspx.cs">
+      <DependentUpon>kitapnoyagore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara\kitapnoyagore.aspx.designer.cs">
+      <DependentUpon>kitapnoyagore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara\türegore.aspx.cs">
+      <DependentUpon>türegore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara\türegore.aspx.designer.cs">
+      <DependentUpon>türegore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara\yayınevinegore.aspx.cs">
+      <DependentUpon>yayınevinegore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara\yayınevinegore.aspx.designer.cs">
+      <DependentUpon>yayınevinegore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ara\yazaradinagore.aspx.cs">
+      <DependentUpon>yazaradinagore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ara\yazaradinagore.aspx.designer.cs">
+      <DependentUpon>yazaradinagore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bilgigüncelle.aspx.cs">
+      <DependentUpon>bilgigüncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bilgigüncelle.aspx.designer.cs">
+      <DependentUpon>bilgigüncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hizli_link.aspx.cs">
+      <DependentUpon>hizli_link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hizli_link.aspx.designer.cs">
+      <DependentUpon>hizli_link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kitapal.aspx.cs">
+      <DependentUpon>kitapal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kitapal.aspx.designer.cs">
+      <DependentUpon>kitapal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kitapekle.aspx.cs">
+      <DependentUpon>kitapekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kitapekle.aspx.designer.cs">
+      <DependentUpon>kitapekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kitaplar.aspx.cs">
+      <DependentUpon>kitaplar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kitaplar.aspx.designer.cs">
+      <DependentUpon>kitaplar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterpage.Master.cs">
+      <DependentUpon>masterpage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterpage.Master.designer.cs">
+      <DependentUpon>masterpage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="okuduklarim.aspx.cs">
+      <DependentUpon>okuduklarim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okuduklarim.aspx.designer.cs">
+      <DependentUpon>okuduklarim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="uyegirisi.aspx.cs">
+      <DependentUpon>uyegirisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uyegirisi.aspx.designer.cs">
+      <DependentUpon>uyegirisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uyelikformu.aspx.cs">
+      <DependentUpon>uyelikformu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uyelikformu.aspx.designer.cs">
+      <DependentUpon>uyelikformu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="üye_liste.aspx.cs">
+      <DependentUpon>üye_liste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="üye_liste.aspx.designer.cs">
+      <DependentUpon>üye_liste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="üzerimdekiler.aspx.cs">
+      <DependentUpon>üzerimdekiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="üzerimdekiler.aspx.designer.cs">
+      <DependentUpon>üzerimdekiler.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="masterpage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site2.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site3.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50574</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

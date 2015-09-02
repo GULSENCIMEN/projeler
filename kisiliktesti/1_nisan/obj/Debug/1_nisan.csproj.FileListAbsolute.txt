@@ -1,0 +1,45 @@
+c:\users\gulsen\documents\visual studio 2010\Projects\1_nisan\1_nisan\bin\1_nisan.dll
+c:\users\gulsen\documents\visual studio 2010\Projects\1_nisan\1_nisan\bin\1_nisan.pdb
+c:\users\gulsen\documents\visual studio 2010\Projects\1_nisan\1_nisan\obj\Debug\1_nisan.dll
+c:\users\gulsen\documents\visual studio 2010\Projects\1_nisan\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\GULSEN\Documents\Visual Studio 2010\Projects\1_nisan\1_nisan\obj\Debug\1_nisan.csprojResolveAssemblyReference.cache
+C:\Users\GULSEN\Desktop\7_nisan\1_nisan\bin\1_nisan.dll
+C:\Users\GULSEN\Desktop\7_nisan\1_nisan\bin\1_nisan.pdb
+C:\Users\GULSEN\Desktop\7_nisan\1_nisan\obj\Debug\1_nisan.csprojResolveAssemblyReference.cache
+C:\Users\GULSEN\Desktop\7_nisan\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\GULSEN\Desktop\7_nisan\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\yagmur\Desktop\7_nisan\1_nisan\bin\1_nisan.dll
+C:\Users\yagmur\Desktop\7_nisan\1_nisan\bin\1_nisan.pdb
+C:\Users\yagmur\Desktop\7_nisan\1_nisan\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yagmur\Desktop\7_nisan\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\yagmur\Desktop\7_nisan\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\yagmur\Desktop\yazılım\7_nisan\1_nisan\bin\1_nisan.dll
+C:\Users\yagmur\Desktop\yazılım\7_nisan\1_nisan\bin\1_nisan.pdb
+C:\Users\yagmur\Desktop\yazılım\7_nisan\1_nisan\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yagmur\Desktop\yazılım\7_nisan\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\yagmur\Desktop\yazılım\7_nisan\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\GULSEN\Desktop\15_nisan\1_nisan\bin\1_nisan.dll
+C:\Users\GULSEN\Desktop\15_nisan\1_nisan\bin\1_nisan.pdb
+C:\Users\GULSEN\Desktop\15_nisan\1_nisan\obj\Debug\1_nisan.csprojResolveAssemblyReference.cache
+C:\Users\GULSEN\Desktop\15_nisan\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\GULSEN\Desktop\15_nisan\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\GULSEN\Desktop\3_mayıs\1_nisan\bin\1_nisan.dll
+C:\Users\GULSEN\Desktop\3_mayıs\1_nisan\bin\1_nisan.pdb
+C:\Users\GULSEN\Desktop\3_mayıs\1_nisan\obj\Debug\1_nisan.csprojResolveAssemblyReference.cache
+C:\Users\GULSEN\Desktop\3_mayıs\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\GULSEN\Desktop\3_mayıs\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\yagmur\Desktop\3_mayıs\3_mayıs\1_nisan\bin\1_nisan.dll
+C:\Users\yagmur\Desktop\3_mayıs\3_mayıs\1_nisan\bin\1_nisan.pdb
+C:\Users\yagmur\Desktop\3_mayıs\3_mayıs\1_nisan\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yagmur\Desktop\3_mayıs\3_mayıs\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\yagmur\Desktop\3_mayıs\3_mayıs\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\yagmur\Desktop\8_mayıs\3_mayıs\1_nisan\bin\1_nisan.dll
+C:\Users\yagmur\Desktop\8_mayıs\3_mayıs\1_nisan\bin\1_nisan.pdb
+C:\Users\yagmur\Desktop\8_mayıs\3_mayıs\1_nisan\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yagmur\Desktop\8_mayıs\3_mayıs\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\yagmur\Desktop\8_mayıs\3_mayıs\1_nisan\obj\Debug\1_nisan.pdb
+C:\Users\yagmur\Desktop\1B-GRUP6\1_nisan\bin\1_nisan.dll
+C:\Users\yagmur\Desktop\1B-GRUP6\1_nisan\bin\1_nisan.pdb
+C:\Users\yagmur\Desktop\1B-GRUP6\1_nisan\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yagmur\Desktop\1B-GRUP6\1_nisan\obj\Debug\1_nisan.dll
+C:\Users\yagmur\Desktop\1B-GRUP6\1_nisan\obj\Debug\1_nisan.pdb

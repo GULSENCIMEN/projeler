@@ -1,0 +1,51 @@
+#menu {  text-align: center;
+font-size: 15px;
+width:100%;
+margin: 0px auto;
+font-family: 'Share';
+}
+#menu ul { list-style-type: none;}
+#menu ul li.menu1 { float: left;}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #7777FF;
+	position: relative;
+	padding-top: 6px;
+	padding-right: 20px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+}
+#menu ul li:hover {position: relative;
+}
+
+#menu ul li a:hover, #menu ul li:hover a.menu1 {background-color: #FFC488;
+color: #000;
+position: relative;
+}
+
+#menu ul li a.menu1 {display: block!important;display: none;
+position: relative;
+}
+
+.menu1 {display: block!important;display: none;
+    position: relative;
+}
+#menu ul li ul {display: none;z-index:1000}
+#menu ul li a:hover ul, #menu ul li:hover ul {display: block;
+position: absolute;left: 0px;
+}
+#menu ul li:hover ul {display: block;
+    position: absolute;left: 0px;
+}
+#menu ul li ul li a {
+	width: 250px;
+	padding: 6px 0px 6px 20px;
+	border-top-color: #000;
+	text-align: left;
+}
+
+#menu ul li ul li a:hover {border-top-color: #000;
+position: relative;
+}

@@ -1,0 +1,20 @@
+H:\proje2 (2)\proje2\proje2\bin\proje2.dll
+H:\proje2 (2)\proje2\proje2\bin\proje2.pdb
+H:\proje2 (2)\proje2\proje2\obj\Debug\ResolveAssemblyReference.cache
+H:\proje2 (2)\proje2\proje2\obj\Debug\proje2.dll
+H:\proje2 (2)\proje2\proje2\obj\Debug\proje2.pdb
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\verit\ensonhal\proje2\proje2\bin\proje2.dll
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\verit\ensonhal\proje2\proje2\bin\proje2.pdb
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\verit\ensonhal\proje2\proje2\obj\Debug\proje2.dll
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\verit\ensonhal\proje2\proje2\obj\Debug\proje2.pdb
+C:\Users\saybek\Documents\Visual Studio 2010\Projects\verit\ensonhal\proje2\proje2\obj\Debug\sonhal.csprojResolveAssemblyReference.cache
+C:\Users\w7\Desktop\proje2rabia\proje2\bin\proje2.dll
+C:\Users\w7\Desktop\proje2rabia\proje2\bin\proje2.pdb
+C:\Users\w7\Desktop\proje2rabia\proje2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\w7\Desktop\proje2rabia\proje2\obj\Debug\proje2.dll
+C:\Users\w7\Desktop\proje2rabia\proje2\obj\Debug\proje2.pdb
+C:\Users\w7\Desktop\proje2son\proje2\bin\proje2.dll
+C:\Users\w7\Desktop\proje2son\proje2\bin\proje2.pdb
+C:\Users\w7\Desktop\proje2son\proje2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\w7\Desktop\proje2son\proje2\obj\Debug\proje2.dll
+C:\Users\w7\Desktop\proje2son\proje2\obj\Debug\proje2.pdb

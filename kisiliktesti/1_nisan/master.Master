@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="_1_nisan.master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]> <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> <![endif]-->
+
+</head>
+
+<style type="text/css">
+#pagewrap {width: 960px;margin: 20px auto;} #header {height: 180px;} #content {width: 600px;float: left;} #sidebar {width: 300px;float: right;} #footer {clear: both;}
+/* for 980px or less */ @media screen and (max-width: 980px) { #pagewrap {width: 94%;} #content {width: 65%;} #sidebar {width: 30%;} }
+/* for 700px or less */ @media screen and (max-width: 700px) { #content {width: auto;float: none;} #sidebar {width: auto;float: none;} }
+/* for 480px or less */ @media screen and (max-width: 480px) { #header {height: auto;} #sidebar {display: none;} }
+
+
+</style>
+<body background="arka.jpg" ;background-repeat:repeat-x;>
+
+
+    <form id="form1" runat="server" style="height:%100px; width:%100px">
+         
+    <div style="width: 850px; margin-left: 200px;">
+        <asp:Image ID="Image1" runat="server" Height="164px" 
+            ImageUrl="~/kisilik_logo - Kopya.png" Width="845px" />
+        <div style="float:right; width: 693px;  margin-left:auto; margin-right:auto; height: 500px; background-color:White">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+                     </div>
+
+                            <div style= "float:left; width: 155px; height: 500px; background-color: White">
+                    
+                    <center>
+                    <br />
+                    <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                 <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/uyee.png" Width="118px" 
+                            Height="112px" />
+                        <br />
+                        <br />
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="admingiris.aspx" ForeColor="Black">Yönetici Girişi</asp:HyperLink>
+                                </center>
+            </div>
+    </div>
+    
+    </form>
+</body>
+</html>

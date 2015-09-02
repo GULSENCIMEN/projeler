@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CATALOG>
+
+    <PROGRAM>
+         <BASLIK> BEYAZ GÜL </BASLIK>
+         <ICERIK> MASUMLUK </ICERIK>
+		  
+   </PROGRAM>
+
+    <PROGRAM>
+          <BASLIK> BEYAZ LALE </BASLIK>
+          <ICERIK> SAFLIK, TEMİZLİK </ICERIK>
+		    	</PROGRAM>
+
+     <PROGRAM>
+           <BASLIK> KIRMIZI GÜL </BASLIK>
+            <ICERIK> AŞK </ICERIK>
+			
+     </PROGRAM>
+	  <PROGRAM>
+           <BASLIK> KIRMIZI LALE </BASLIK>
+            <ICERIK> SENİ SEVİYORUM </ICERIK>
+			
+     </PROGRAM>
+	  <PROGRAM>
+           <BASLIK> PEMBE GÜL </BASLIK>
+            <ICERIK> GÖNLÜM SENDE </ICERIK>
+			
+     </PROGRAM>
+	  <PROGRAM>
+           <BASLIK> PEMBE LALE </BASLIK>
+            <ICERIK> ANLAYIŞ </ICERIK>
+			
+     </PROGRAM>
+	 	  <PROGRAM>
+           <BASLIK> SARI GÜL </BASLIK>
+            <ICERIK> SICAK SEVGİ </ICERIK>
+			
+     </PROGRAM>
+	 	  <PROGRAM>
+           <BASLIK> SARI LALE </BASLIK>
+            <ICERIK> GERGİNLİK </ICERIK>
+			
+     </PROGRAM>
+	 	  <PROGRAM>
+           <BASLIK> BEYAZ KARANFİL </BASLIK>
+            <ICERIK> TEMİZLİK, SAFLIK </ICERIK>
+			
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> PAPATYA </BASLIK>
+            <ICERIK> BOLLUK, SIHHAT </ICERIK>
+			
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> KIRMIZI KARANFİL </BASLIK>
+            <ICERIK> SEVGİ </ICERIK>
+			
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> MENEKŞE </BASLIK>
+            <ICERIK> ALÇAK GÖNÜLLÜ </ICERIK>
+			
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> PEMBE KARANFİL </BASLIK>
+            <ICERIK> İÇTENLİK </ICERIK>
+			
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> İRİS </BASLIK>
+            <ICERIK> HATIRA, ZERAFET </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	  <PROGRAM>
+           <BASLIK> SARI KARANFİL </BASLIK>
+            <ICERIK> HÜZUN </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	  <PROGRAM>
+           <BASLIK> KAMELYA </BASLIK>
+            <ICERIK> MAĞRUR </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	  <PROGRAM>
+           <BASLIK> ANEMON </BASLIK>
+            <ICERIK> GENÇLİK </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	  <PROGRAM>
+           <BASLIK> LİLYUM </BASLIK>
+            <ICERIK> GÜVEN </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	  <PROGRAM>
+           <BASLIK> BEYAZ GLAYÖR </BASLIK>
+            <ICERIK> DOSTLUK </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	  <PROGRAM>
+           <BASLIK> GERBERA </BASLIK>
+            <ICERIK> İYİMSER </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	 	  <PROGRAM>
+           <BASLIK> KIRMIZI GLAYÖR </BASLIK>
+            <ICERIK> İSTEK </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	 	  <PROGRAM>
+           <BASLIK> FREZYA </BASLIK>
+            <ICERIK> SUÇSUZLUK </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	 	  <PROGRAM>
+           <BASLIK> PEMBE GLAYÖR </BASLIK>
+            <ICERIK> ZARAFET </ICERIK>
+			
+     </PROGRAM>	 
+	 	 	 	 	  <PROGRAM>
+           <BASLIK> BEYAZ KRİZANTEM </BASLIK>
+            <ICERIK> SADAKAT </ICERIK>
+			
+     </PROGRAM>	
+	 	 	 	 	  <PROGRAM>
+           <BASLIK> SARI GLAYÖR </BASLIK>
+            <ICERIK> KISKANÇLIK </ICERIK>
+			
+     </PROGRAM>	
+	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> KIRMIZI KRİZANTEM </BASLIK>
+            <ICERIK> SESSİZ İSTEK </ICERIK>
+			
+     </PROGRAM>	
+	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> MOR GLAYÖR </BASLIK>
+            <ICERIK> İNANÇ </ICERIK>
+			
+     </PROGRAM>	
+	 	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> SARI KRİZANTEM </BASLIK>
+            <ICERIK> KARŞILIKSIZ SEVGİ </ICERIK>
+			
+     </PROGRAM>	
+	 	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> ORKİDE </BASLIK>
+            <ICERIK> MAĞRUR, GURURLU </ICERIK>
+			
+     </PROGRAM>	
+	 	 	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> STERLİÇYA </BASLIK>
+            <ICERIK> SICAK SEVGİ </ICERIK>
+			
+     </PROGRAM>	
+	 	 	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> MERSEDES GÜLÜ </BASLIK>
+            <ICERIK> MELANKOLİ </ICERIK>
+			
+     </PROGRAM>	
+	  	 	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> AĞLAYAN GELİN </BASLIK>
+            <ICERIK> İSYAN </ICERIK>
+			
+     </PROGRAM>	
+	 	  	 	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> ALTIN KADEH </BASLIK>
+            <ICERIK> UMUT </ICERIK>
+			
+     </PROGRAM>	
+	 	  	 	 	 	 	 	 	  <PROGRAM>
+           <BASLIK> FULYA </BASLIK>
+            <ICERIK> UNUTMA </ICERIK>
+			
+     </PROGRAM>	
+
+</CATALOG>

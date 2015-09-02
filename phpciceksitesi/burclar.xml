@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CATALOG>
+
+    <PROGRAM>
+         <BASLIK> KOÇ </BASLIK>
+         <ICERIK> 21 MART - 20 NİSAN </ICERIK>
+		 <AD> LALE - PAPATYA </AD>
+  
+   </PROGRAM>
+
+    <PROGRAM>
+          <BASLIK> BOĞA </BASLIK>
+          <ICERIK> 21 NİSAN - 20 MAYIS </ICERIK>
+		  <AD> KIRMIZI GÜL, PEMBE KARANFİL </AD>
+   	</PROGRAM>
+
+     <PROGRAM>
+           <BASLIK> İKİZLER </BASLIK>
+            <ICERIK> 21 MAYIS - 21 HAZİRAN </ICERIK>
+			<AD> GARDENYA, YASEMİN VE SÜMBÜL </AD>
+
+     </PROGRAM>
+	  <PROGRAM>
+           <BASLIK> YENGEÇ </BASLIK>
+            <ICERIK> 22 HAZİRAN - 22 TEMMUZ </ICERIK>
+			<AD> NİLÜFER, BEYAZ GÜL VE ZAMBAK </AD>
+
+     </PROGRAM>
+	  <PROGRAM>
+           <BASLIK> ASLAN </BASLIK>
+            <ICERIK> 23 TEMMUZ - 23 AĞUSTOS </ICERIK>
+			<AD> KIRMIZI GÜL, SARI KRİZAMTEM VE ORKİDE </AD>
+
+     </PROGRAM>
+	  <PROGRAM>
+           <BASLIK> BAŞAK </BASLIK>
+            <ICERIK> 24 AĞUSTOS - 23 EYLÜL </ICERIK>
+			<AD> AÇELYA, SARI MENEKŞE </AD>
+
+     </PROGRAM>
+	 	  <PROGRAM>
+           <BASLIK> TERAZİ </BASLIK>
+            <ICERIK> 24 EYLÜL - 23 EKİM </ICERIK>
+			<AD> PEMBE KRİZANTEM, PEMBE GÜL </AD>
+
+     </PROGRAM>
+	 	  <PROGRAM>
+           <BASLIK> AKREP </BASLIK>
+            <ICERIK> 24 EKİM - 22 KASIM </ICERIK>
+			<AD> KIRMIZI KARANFİL, HANIMELİ </AD>
+
+     </PROGRAM>
+	 	  <PROGRAM>
+           <BASLIK> YAY </BASLIK>
+            <ICERIK> 23 KASIM - 21 ARALIK </ICERIK>
+			<AD> LEYLAK VE MOR MENEKŞE </AD>
+
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> OĞLAK </BASLIK>
+            <ICERIK> 22 ARALIK - 20 OCAK </ICERIK>
+			<AD> SİYAH GÜL, KADİFE ÇİÇEĞİ VE KAMELYA </AD>
+
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> KOVA </BASLIK>
+            <ICERIK> 21 OCAK - 19 ŞUBAT </ICERIK>
+			<AD> ZENNEN, MENEKŞE VE KARTOPU </AD>
+
+     </PROGRAM>
+	 	 	  <PROGRAM>
+           <BASLIK> BALIK </BASLIK>
+            <ICERIK> 20 ŞUBAT - 20 MART </ICERIK>
+			<AD> İNCİ ÇİÇEĞİ, ZAMBAK </AD>
+
+     </PROGRAM>
+	 
+
+</CATALOG>

@@ -1,0 +1,15 @@
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.csproj.AssemblyReference.cache
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.AssemblyInfoInputs.cache
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.AssemblyInfo.cs
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.csproj.CoreCompileInputs.cache
+C:\Users\gcimen\source\repos\SmartLightController\bin\Debug\net6.0\SmartLightController.exe
+C:\Users\gcimen\source\repos\SmartLightController\bin\Debug\net6.0\SmartLightController.deps.json
+C:\Users\gcimen\source\repos\SmartLightController\bin\Debug\net6.0\SmartLightController.runtimeconfig.json
+C:\Users\gcimen\source\repos\SmartLightController\bin\Debug\net6.0\SmartLightController.dll
+C:\Users\gcimen\source\repos\SmartLightController\bin\Debug\net6.0\SmartLightController.pdb
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.dll
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\refint\SmartLightController.dll
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.pdb
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\SmartLightController.genruntimeconfig.cache
+C:\Users\gcimen\source\repos\SmartLightController\obj\Debug\net6.0\ref\SmartLightController.dll
